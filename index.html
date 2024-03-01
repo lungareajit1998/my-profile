@@ -4,12 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Profile</title>
-      <!-- CDN Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CDN Link -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Font Family -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <style>
       header{
         padding: 20px;
         background-color: rgb(216, 244, 245);
+        font-family: "Roboto", sans-serif;
       }
       #resume{
         color: orange;
@@ -20,11 +25,17 @@
       }
       nav{
         margin: 20px 10px;
+        font-style: italic;
+        font-family: "Roboto", sans-serif;
       }
       .heading{
         color: cadetblue;
         font-style: italic;
         text-decoration-line: underline;
+        font-family: "Roboto", sans-serif;
+      }
+      #project{
+        font-family: "Poppins", sans-serif;
       }
       .header-info{
         margin-right: 40px;
@@ -60,14 +71,34 @@
       }
       li{
         padding-top: 20px;
+        font-family: "Poppins", sans-serif;
+      }
+      table, th, td{
+        margin: 5px;
+        border: 1px solid black;
+        font-family: "Poppins", sans-serif;
       }
       table{
-        margin: 10px;
-        
+        border-collapse: collapse;
+        width: 100%;
+        background-color: lightyellow;
+      }
+      th{
+        padding: 10px;
+      }
+      td{
+        text-align: center;
+        padding: 10px;
       }
       .footer-info{
         margin-left: 10px;
         margin-right: 20px;
+      }
+      #techtable{
+        width: 50%;
+      }
+      #copyright{
+        font-family: "Poppins", sans-serif;
       }
     </style>
     
@@ -117,7 +148,7 @@
       <!-- Technology stack section -->
       <section id="techStack">
         <h2 class="heading">My Technology stack is</h2>
-        <table border="2">
+        <table id="techtable">
           <thead>
             <tr>
               <th>Sr.No</th>
@@ -153,13 +184,14 @@
     <hr>
 
        <!-- Project Section -->
-      <section id="project">
         <h2 class="heading">Projects</h2>
+        <section id="project">
             <p>Name: <span id="student">Student Management</span></p>
             <p><span id="environmtent">Environment:</span><mark>Angular 8, TypeScript (ES6), HTML5, CSS, Bootstrap, GitHub, Desktop GitHub, Agile and JIRA, IDE - VS Code</mark></p>
             <p> <span id="team">Team size:</span>06 <span id="duration">Duration:</span>2021-1<sup>st</sup>July till <u><i>present</i></u></p> 
             <p> <span id="description">Project Description:</span>This project is mainly used for student management in college. When it helps to manage student record like <br>
             student Registration, student update information and to see all his or her Academic activities like score card, attendance.</p>
+          </section>
     <hr>
         <h2 class="heading">Roles and Responsibilities</h2>
             <ul>
@@ -178,7 +210,7 @@
       <section id="education">
         <h2 class="heading">Education Details</h2>
       </section>
-        <table border="2">
+        <table>
           <thead>
             <tr>
               <th>Qualification</th>
@@ -190,25 +222,25 @@
           </thead>
           <tbody>
             <tr>
-              <td>BE</td>
-              <td>CSMIT, Shendung, Panvel</td>
-              <td>Mumbai</td>
-              <td>2019</td>
-              <td>61.27%</td>
+              <td>Bsc</td>
+              <td>Gramin Science College, Nanded</td>
+              <td>SRTMUN</td>
+              <td>2020</td>
+              <td>62.11%</td>
             </tr> 
             <tr>
-              <td>Diploma</td>
-              <td>VJTI, Matunga, Mumbai</td>
-              <td>Autonomous</td>
+              <td>HSC</td>
+              <td>Shiv Shakti College, Nanded</td>
+              <td>State Board</td>
               <td>2016</td>
-              <td>72.29%</td>
+              <td>60%</td>
             </tr>
             <tr>
               <td>SSC</td>
-              <td>DVS High School, Kopar Khairane, Navi Mumbai</td>
+              <td>Pratibha Niketan Highschool, Nanded</td>
               <td>State Board</td>
-              <td>2013</td>
-              <td>90.73%</td>
+              <td>2014</td>
+              <td>77%</td>
             </tr> 
           </tbody>
         </table>
@@ -223,7 +255,7 @@
         <i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i></a>
     </footer>
     <hr>
-    <section>
+    <section id="copyright">
       <!-- Copy write section -->
       Copyright &copy;2024 Codemind Technology Video Communications, Inc. All rights reserved.
     </section>
