@@ -100,6 +100,18 @@
       #copyright{
         font-family: "Poppins", sans-serif;
       }
+      #listSummary li{
+        list-style-type: none;
+      }
+      #listSummary li::marker{
+        content: "✍️";
+      }
+      .roles li{
+        list-style-type: lower-roman;
+      }
+      #projectdesc::selection{
+        background-color: orange;
+      }
     </style>
     
   </head>
@@ -132,7 +144,7 @@
         <!-- HOME Section -->
       <section id="home">
         <h2 class="heading">Professional Summary</h2>
-        <ul>
+        <ul id="listsummary">
           <li>Having 1 years of experience of developing Single page Web Applications using Angular 8, Bootstrap 5, JavaScript, TypeScript</li>
           <li>Experience on working with version control system - GIT and GitHub</li>
           <li>Experience working with JIRA for user stories and bug tracking</li>
@@ -189,12 +201,12 @@
             <p>Name: <span id="student">Student Management</span></p>
             <p><span id="environmtent">Environment:</span><mark>Angular 8, TypeScript (ES6), HTML5, CSS, Bootstrap, GitHub, Desktop GitHub, Agile and JIRA, IDE - VS Code</mark></p>
             <p> <span id="team">Team size:</span>06 <span id="duration">Duration:</span>2021-1<sup>st</sup>July till <u><i>present</i></u></p> 
-            <p> <span id="description">Project Description:</span>This project is mainly used for student management in college. When it helps to manage student record like <br>
+            <p id="projectdesc"> <span id="description">Project Description:</span>This project is mainly used for student management in college. When it helps to manage student record like <br>
             student Registration, student update information and to see all his or her Academic activities like score card, attendance.</p>
           </section>
     <hr>
         <h2 class="heading">Roles and Responsibilities</h2>
-            <ul>
+            <ol class="roles">
               <li>Designed and implemented the user interface using HTML 5 and CSS</li>
               <li>Work closely with the backend developers for code integration</li>
               <li>Identifying and troubleshooting issues with frontend code </li>
@@ -202,7 +214,7 @@
               <li>Used JIRA for bug tracking</li>
               <li>Implemented project using Agile SCRUM methodology, Involved in daily stand up meetings, sprint showcase and sprint retrospective</li>
               <li>Involved in fixing technical issues</li>
-            </ul>
+            </ol>
       </section>
     <hr>
 
