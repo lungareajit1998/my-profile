@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    list-style-type:none;
+    
+    
+}
+/*Heading Section*/
+.heading{
+    color: cadetblue;
+    font-style: italic;
+    text-decoration-line: underline;
+    font-family: "Roboto", sans-serif;
+    
+}
+header{
+    padding: 8px;
+    font-family: "Roboto", sans-serif;
+    background-color: cadetblue;
+    display: inline;
+    top: 0px;
+    width: 100%;
+    position: fixed;
+   
+    
+}
+.header-info{
+    margin-right: 40px;
+    margin-left: 10px;
+}
+  /* Navigation Section */
+#navSection{
+    padding: 5px;
+    text-align: right;
+    text-decoration: none;
+    margin-bottom: 5px;
+    top: 20px;
+    position: fixed;
+}
+#navSection li{
+    display: inline;
+    margin-right: 30px;
+    padding: 0px;
+    
+}
+.nav{
+    margin-right: 30px;
+}
+nav{
+    margin: 20px 0px;
+    font-style: italic;
+    font-family: "Roboto", sans-serif;
+    
+   
+}
+/*Home section*/
+#home{
+    padding-top: 70px;
+}
+/* Resume Section*/
+#resume{
+    color: brown;
+    font-weight: bolder;
+    text-decoration-line: none;
+}
+#resume-text{
+    margin-left: 10px;
+}
+#project{
+    font-family: "Poppins", sans-serif;
+}
+#student{
+    font-weight: bold;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+#team{
+    font-weight: bold;
+    text-decoration: underline;
+    margin-right: 10px;
+}
+#duration{
+    font-weight: bold;
+    text-decoration: underline;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+#environmtent{
+    text-decoration-line: underline;
+    margin-right: 10px;
+    font-weight: bold;
+}
+#description{
+    font-weight: bold;
+    margin-right: 5px;
+}
+/*Table Section*/
+li{
+    padding-top: 20px;
+    font-family: "Poppins", sans-serif;
+}
+table, th, td{
+    margin: 5px;
+    border: 1px solid black;
+    font-family: "Poppins", sans-serif;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    background-color: lightyellow;
+}
+th{
+    padding: 10px;
+}
+td{
+    text-align: center;
+    padding: 10px;
+}
+.footer-info{
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+#whatsapp{
+    right: 20px;
+    bottom: 20px;
+    position: fixed;
+    display: inline-block;
+    
+}
+#messages{
+    right: 80px;
+    bottom: 20px;
+    position: fixed;
+}
+
+#techtable{
+    width: 50%;
+}
+#copyright{
+    font-family: "Poppins", sans-serif;
+}
+#listSummary li{
+    list-style-type: none;
+}
+#listSummary li::marker{
+    content: "✍️";
+}
+.roles li{
+    list-style-type: lower-roman;
+}
+#projectdesc::selection{
+    background-color: orange;
+}
+/* Container Section */
+#container,#education,#tab{
+    margin: 20px auto;
+}
