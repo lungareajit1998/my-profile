@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Cards</title>
+    <!-- Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+</head>
+    <style>
+        body{
+            background-color: #ecf0f1;
+        }
+        *{
+            box-sizing: border-box;
+           
+        }
+        .main-section{
+            width: 400px;
+            height: 400px;
+            border: 1px solid rgb(171, 169, 169);
+            border-radius: 10px;
+            box-shadow: 13px 13px 10px -8px rgb(82, 80, 80);
+            margin: 20px;
+            display: inline-block;
+            
+        }
+        
+        #item-photo{
+            width: 100%;
+            border-radius: 20px;
+            padding: 8px 
+        }
+        #bs-button{
+            color: cadetblue;
+            background-color: cornsilk;
+            border-radius: 20px;
+            border: 2px solid orangered;
+            padding: 5px 15px;
+            bottom: 240px;
+            left: 20px;
+            position: relative;
+            
+        }
+        #bs-button:hover{
+            background-color: orangered;
+            color: white;
+        }
+        #off-button{
+            color: rgb(255, 2, 2);
+            background-color: antiquewhite;
+            border-radius: 20px;
+            border: 2px solid red;
+            bottom: 50px;
+            padding: 5px 15px;
+            left: 210px;
+            position: relative;
+        }
+        #off-button:hover{
+            background-color: red;
+            color: whitesmoke;
+        }
+        p, h2{
+            padding: 10px;
+            margin: 0px;
+        }
+        /*Assignment-2*/
+        #assignment2{
+            width: 400px;
+            height: 385px;
+            border: 1px solid rgb(171, 169, 169);
+            border-radius: 10px;
+            box-shadow: 13px 13px 10px -8px rgb(82, 80, 80);
+            display: inline-block;
+            background-color: #387a80;
+            color: #fffffa;
+            font-family: "Madimi One", sans-serif;
+        }
+        .madimi-one-regular {
+            font-family: "Madimi One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        #name{
+            text-align: center;
+        }
+        #bill-pic{
+            width: 200px;
+        }
+        #bottom{
+            width: 400px;
+            height: 85px;
+            border-radius: 10px;
+            border: 1px solid #5bc7ac;
+            background-color: #5bc7ac;
+        }
+        #text-2{
+            text-align: center;
+            text-decoration:solid ;
+        }
+    </style>
+<body>
+    <section class="main-section">
+        <img id="item-photo" src="https://source.unsplash.com/1600x1000/?burger" alt="">
+        <button type="button" id="bs-button">Best Seller</button>
+        <button  type="button" id="off-button">Offers</button>
+        <section>
+            <h2>Veg Supreme Burger</h2>
+            <p class="item-text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+        </section>
+    </section>
+    <section id="assignment2">
+        <section id="name">
+            <img id="bill-pic" src="assets/bill-gates.jpg" alt="">
+            <h2>WILLIAM HENRY GATES III</h2>
+            <P>Microsoft Co-founder</P>
+        </section>
+        <section id="bottom">
+            <p id="text-2">FOR <br>PROJECT AND PEOPLE <br>TRANSPORTATION</p>
+        </section>
+    </section>
+    
+</body>
+</html>
